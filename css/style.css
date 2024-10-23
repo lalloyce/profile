@@ -1,0 +1,91 @@
+    :root {
+        --primary-color: #F07339;    /* Deep blue-gray for main elements */
+        --secondary-color: #3498db;   /* Bright blue for accents */
+        --text-color: #34495e;       /* Softer dark blue for text */
+        --background-color: #f5f6fa; /* Light grayish-blue for background */
+        --highlight-color: #e74c3c;  /* Coral red for hover states */
+        --footer-bg: #2c3e50;        /* Same as primary for footer */
+        --footer-text: #ecf0f1;      /* Light gray for footer text */
+    }
+
+    /* Body background */
+    body {
+        background-color: var(--background-color);
+    }
+
+    /* Navigation styling */
+    .nav {
+        background-color: var(--primary-color);
+    }
+
+    .nav-link {
+        color: var(--text-color) !important;
+    }
+
+    .nav-link.active {
+        background-color: var(--secondary-color) !important;
+    }
+
+    .nav-link:hover {
+        color: var(--highlight-color) !important;
+    }
+
+    /* Card styling */
+    .card {
+        border-color: var(--secondary-color);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .card-title {
+        color: var(--primary-color);
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .card-subtitle {
+        color: var(--text-color);
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    /* Accordion styling */
+    .accordion-button {
+        background-color: var(--primary-color) !important;
+        color: var(--footer-text) !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: var(--secondary-color) !important;
+    }
+
+    /* Links styling */
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--highlight-color);
+    }
+
+    /* Footer styling */
+    .footer {
+        background-color: var(--footer-bg);
+        color: var(--footer-text);
+        padding: 2rem 0;
+        margin-top: auto;
+    }
+
+    .footer a {
+        color: var(--footer-text);
+    }
+
+    .footer a:hover {
+        color: var(--secondary-color);
+    }
+
+    .card-title, .card-subtitle {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
